@@ -6,7 +6,9 @@ def convertCoin(x) :
             for j in range(int(x/counterCoin[i])) :
                 resList.append(counterCoin[i])
                 x -= counterCoin[i]
-    print(resList)      
+    return resList
 
 intIn = int(input("Input jumlah uang : "))
-convertCoin(intIn)
+out = convertCoin(intIn)
+
+print("Output : {0}".format(out))

@@ -1,19 +1,26 @@
-def convertIntToList(n) :
-    number = []
-    current_number = n
-    reversed_number = []
-    while current_number > 0 :
-        last_digit = current_number % 10
-        reversed_number.append(last_digit)
-        current_number = (current_number - last_digit) // 10
-    for i in range(len(number)) :
-        reversed_number[i] = number[len(number)-1 -i]
-    return(reversed_number)
+def nextPalindrome(n) :
+    count = 0
+    hasil = 0
     
+    while count < 1 :
+        n += 1
+        new_angka = n
+        temp = 0
+        while new_angka > 0 :
+            satuan = new_angka % 10
+            temp = temp * 10 + satuan
+            new_angka = int(new_angka/10)
+        if n == temp :
+            hasil = temp
+            count += 1
+
+    # print(hasil)
+    return hasil
     
-    
-    
+
+
 
 angka = int(input("Masukan integer : "))
 
-print(convertIntToList(angka))
+res = nextPalindrome(angka)
+print("Next Palindrome Angka : {0}".format(res))

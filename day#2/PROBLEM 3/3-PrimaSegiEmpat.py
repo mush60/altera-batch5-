@@ -1,6 +1,6 @@
 def getPrimeNumber(n) :
     count = 0
-    for k in range(3, n) :
+    for k in range(2, n) :
         if n % k != 0 :
             count += 0
         else :
@@ -13,9 +13,10 @@ def primaSegiEmpat(p, l, x) :
     lsprima = []
     x = x+1
     while len(lsprima) < lprime :
-        if x > 2 : 
+        if x >= 2 : 
             if x == 3 :
                 lsprima.append(x)
+                x+=1
             else :
                 c = getPrimeNumber(x)
                 if c > 0 :
@@ -23,6 +24,9 @@ def primaSegiEmpat(p, l, x) :
                 else :
                     lsprima.append(x)
                     x += 1
+        else :
+            x+= 1
+
     ind = 0
     jp = 0
     for i in range(l) :
