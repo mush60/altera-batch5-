@@ -1,24 +1,14 @@
-def checkPrime(number):
-    count = 0
-    if number == 2 :
-        count += 0
-    elif number > 2 :
-        for i in range(2, number) :
-            if number % i == 0 :
-                count += 1
-            else :
-                count += 0
-    else :
-        count += 1
+def bilanganUnik(number):
+    list_unik = []
+    for i in range(2, number+1) :
+        if i % 2 != 0 and i % 3 != 0 and i % 5 != 0 :
+            continue
+        else :
+            list_unik.append(i)
 
-    if count > 0 :
-        return "TIDAK"
-    else :
-        return "YA"
+    res = ''
+    for j in range(len(list_unik)) :
+        res = res + str(list_unik[j]) + " "
+    print(res)
 
-
-print(checkPrime(2))
-print(checkPrime(5))
-print(checkPrime(7))
-print(checkPrime(9))
-print(checkPrime(15))
+bilanganUnik(20)
