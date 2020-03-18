@@ -4,6 +4,7 @@ def maksDeretBilangan(numbers):
     for i in range(len(numbers)) :
     	ldr = i+1
     	while ldr <= len(numbers) :
+    		# print("%d : %d " % (i, ldr))
     		list_res.append(sum(numbers[i:ldr]))
     		ldr += 1   	
     return max(list_res)
