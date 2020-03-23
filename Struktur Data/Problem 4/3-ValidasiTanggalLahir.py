@@ -1,0 +1,8 @@
+# def validasiTanggalLahir(arr): # you can only write your code here! # Driver Code print(validasiTanggalLahir([ {'nama ':'Jane Doe', 'tgl_lahir•: '1992-10-31'}, {'nama . '"Jack Doe', 'tgl_lahir': '1997-02-29'}, {'nama . '"Donny Doe', 'tgl_lahir': '1988-12-01'}
+
+
+# 'invalid': [ {tgl lahir': '1997-02-29', 'nama': 'Jack Doe', 'alasan': ['penunjuk hari dalam bulan terkait tidak valid (cek aturan tahun kabisat)']} 'valid': [ {'tgl_lahir': '1992-10-31', 'Donny Doe'} 'nama : ' 'Jane Doe'}, {'tgl_lahir': '1988-12-01', 'nama print(validasiTanggalLahir([ {'nama':'Bayu Aji', 'tgl_lahir': '1983-04-31'}, {'nama':'Tia Nugroho', 'tgl_lahir': '1984-08-29'}, {'nama':'Ariel Bayu', 'tgl_lahir': '1988-07-32'}
+
+# 'invalid': [ {tgl lahir': '1988-07-32', 'alasan': Chari di luar batas yang ditentukan'], 'nama • Bam, {tgl lahir': '1983-04-31', 'nama': 'Bayu Aji', 'alasan': ['hari di luar batas yang ditentukan']} 'valid': [ {tgl lahir': '1984-08-29', 'nama': 'Tia Nugroho'}
+
+# print(validasiTanggalLahir([ {'nama':'Tulus Saputra', 'tgl lahir': '2100-05-31'}, {'nama':'Sumitro Doe', 'tgl_lahir': '2002-13-31'}, {'nama':'Juni Talira', 'tgl lahir': '2001-09-12'} 'invalid': [ {'nama': 'Tulus Saputra', 'alasan': [tahun di luar batas yang ditentukan'], 'tgl_lahir': '2100-05-31'}, {'nama': 'Sumitro Doe', 'alasan': [bulan di luar batas yang ditentukan'], 'tgl_lahir': '2002-13-31'}], 'valid': [ {'nama': 'Juni Talira', 'tgl_lahir': '2001-09-12'}
